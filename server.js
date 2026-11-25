@@ -19,6 +19,28 @@ app.get("/python", async (req,res) => {
         console.log('Server running on ${PORT}');
 });
 
+
+app.get("/", (req,res) =>{
+    res.json({
+        message:"Welcome to API testing"
+    });
+});
+
+app.get("/name", (req,res) => {
+    res.json({
+        message:"Myself" 
+    })
+})
+
+app.get("/app",(req,res) => {
+    res.json({
+        app:"application",
+        language:"JS",
+        stats:"running"
+    });
+});
+
+
 app.listen(PORT, () => {
     console.log("Hello World from PORT 3000 and JS Server ")
 
