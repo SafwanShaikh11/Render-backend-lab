@@ -14,11 +14,12 @@ app.get("/python", async (req,res) => {
     res.json(data);
 })
 
-app.listen(PORT, () => {
-    console.log("Hello World from PORT 3000 and JS Server ")
-
-})
   const PORT = process.env.PORT || 3000
     app.listen(PORT, '0.0.0.0', () => {
         console.log('Server running on ${PORT}');
 });
+
+app.listen(PORT, () => {
+    console.log("Hello World from PORT 3000 and JS Server ")
+
+})
