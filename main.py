@@ -9,7 +9,7 @@ app = Flask(__name__)
 def get_name():
     return jsonify({"name":"user"})
 
-@app.route("/app",method=["GET"])
+@app.route("/app",methods=["GET"])
 
 def get_app():
     return jsonify({
